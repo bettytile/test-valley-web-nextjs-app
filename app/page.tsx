@@ -126,7 +126,7 @@ const Home = () => {
         <div className="small-icons">
           {smallIcons.map((items: any) =>
             <div key={items.mainShortcutId}>
-              <img src={items.imageUrl} alt={items.title} />
+              <img style={{ width: "64px", height: "64px" }} src={items.imageUrl} alt={items.title} />
               <p>{items.title}</p>
             </div>
           )}
