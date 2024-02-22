@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 1024px) {
+  .header-constaine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .search{
+    display: flex; flex-direction: column; align-items: center; 
+  }
+  .search-input {
+    border: 1px solid #5b5b5c; 
+    height: 40px; 
+    border-radius: 5px;
+    max-width: 100px;
+  }
+  .small-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px; 
+  }
+}
+
+
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: "#fff";
+}
+header{
+  top: 0; 
+  position: sticky;
+   padding: 30px 10px;
+   flex-direction: row;
+   display: flex;
+   width: 100%;
+  justify-content: space-between
+}
+.header-constainer{
+  margin:0 auto;
+  display:flex; 
+  flex-direction:row; 
+  align-items:center; 
+  justify-content:space-around; 
+  min-width:90%; 
+  padding: 0px 30px;
+}
+.logo-container{
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: space-between;
+  gap: 15px;
+}
+.search{
+  display: flex; flex-direction: row; align-items: center; justify-content: space-between;
+}
+.search-input{
+  border: 1px solid #5b5b5c; 
+  height: 40px; 
+  border-radius:5px;
+  max-width: 400px;
+}
+.logo-text{
+  color: #00d094;
+}
+.carousel{
+  max-height: 400px;
+  overflow: auto;
+}
+.small-icons{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  min-width:90%; 
+  padding: 0px 30px;
+  justify-content: space-around;
+  align-items: center;
+}
+.product-container{
+  margin-top: 40px;
+}
+
+.hot-deal{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+.title{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+.sub-title{
+  font-size: 12px;
+  color: rgb(153, 153, 153);
+}
+.price span::after {
+  content: "%";
+}
+.tprice::after{
+  content: "원";
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
