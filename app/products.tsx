@@ -52,7 +52,6 @@ const Products = (singleItems: any) => {
                                         <img src='	https://www.testvalley.kr/star/star-darkgray.svg' />{product.publication.rating}
 
                                     </div>
-                                    <p>Text</p>
                                 </div>
                             </div>
                         ))}
